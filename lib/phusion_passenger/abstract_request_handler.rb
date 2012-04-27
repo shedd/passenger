@@ -640,15 +640,15 @@ private
 	end
 	
 	def determine_passenger_header
-		header = "Phusion Passenger (mod_rails/mod_rack)"
-		if @options["show_version_in_header"]
-			header << " #{VERSION_STRING}"
-		end
-		if File.exist?("#{SOURCE_ROOT}/enterprisey.txt") ||
-		   File.exist?("/etc/passenger_enterprisey.txt")
-			header << ", Enterprise Edition"
-		end
-		return header
+		#     header = "Phusion Passenger (mod_rails/mod_rack)"
+		#     if @options["show_version_in_header"]
+		#       header << " #{VERSION_STRING}"
+		#     end
+		#     if File.exist?("#{SOURCE_ROOT}/enterprisey.txt") ||
+		#        File.exist?("/etc/passenger_enterprisey.txt")
+		#       header << ", Enterprise Edition"
+		#     end
+		return "null"
 	end
 	
 	def prepare_request(headers)
